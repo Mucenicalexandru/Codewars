@@ -123,3 +123,32 @@ def solution(number):
             w = set(list2)
         res = z | w
         return sum(res)
+
+
+def sum_of_minimums(numbers):
+    min_list = []
+    for i in range(len(numbers)):
+        x = min(numbers[i])
+        min_list.append(x)
+    return sum(i for i in min_list)
+
+
+'''def sum_of_minimums(numbers):
+    return sum(map(min, numbers))'''
+
+
+def get_middle(s):
+    0 < len(s) < 1000
+    if len(s) % 2 != 0:
+        x = len(s)
+        y = (x - 1) / 2
+        return s[int(y)]
+    else:
+        q = len(s)
+        w = int((q - 1) / 2)
+        r = int((q + 1) / 2)
+        string = s[w]+s[r]
+        return string
+
+
+def duplicate_count(text):
