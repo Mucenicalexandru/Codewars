@@ -5,5 +5,6 @@ def sum_of_minimums(numbers):
         min_list.append(x)
     return sum(i for i in min_list)
 
-def sum_of_minimums(numbers):
-    return sum(map(min, numbers))
+
+'''def sum_of_minimums(numbers):
+    return sum(map(min, numbers))'''
