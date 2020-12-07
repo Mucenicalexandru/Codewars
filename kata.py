@@ -879,3 +879,16 @@ def men_from_boys(arr):
     mens.sort(reverse=True)
 
     return list(dict.fromkeys(boys + mens))
+
+
+def special_number(number):
+    special_numbers = [0, 1, 2, 3, 4, 5]
+    for i in str(number):
+        if int(i) in special_numbers:
+            return "Special!!"
+            break
+        else:
+            return "NOT!!"
+
+
+print(special_number(2))
